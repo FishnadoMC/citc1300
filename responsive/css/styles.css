@@ -1,0 +1,160 @@
+/* Ctrl + Forward Slash to do notes */
+/* Global Styles */
+body {
+    background-color: #56594F;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#container {
+    background-color: #E5E3E4;
+}
+
+.banner {
+    width: 50%;
+}
+/* Mobile Styles: Helps with phones */
+
+@media (min-width: 320px) {
+    nav {
+       background-color: #BF4417;
+       padding: 5px; 
+       margin-top: 5px;
+       padding: 10px;
+       text-align: center;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+/* Keeps it verticle */
+    nav li { 
+        display: block;
+    }
+
+/* Takes links out of inline and allows us to style the nav li specifically */
+    nav li a {
+        display: block;
+        height: 30px;
+        background-color: #54574E;
+        font-size: 19px;
+        text-decoration: solid;
+        margin-top: 5px;
+        
+    }
+
+    nav li a:hover {
+        background-color: #E5E3E4;
+    }
+
+main {
+    padding: 20px;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    background-color: #BF4417;
+    text-shadow: 1px 1px 1px #304351 ;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:  #BF4417;
+    text-shadow: 1px 1px 1px #E5E3E4;
+}
+}
+
+
+/* Tablet  */
+@media (min-width: 726px) {
+    nav {
+       background-color: #BF4417;
+       padding: 20px; 
+       margin: 20px;
+       text-align: center;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+/* Keeps it verticle */
+    nav li { 
+        display: block;
+    }
+
+/* Takes links out of inline and allows us to style the nav li specifically */
+    nav li a {
+        display: block;
+        height: 30px;
+        background-color: #54574E;
+        font-size: 20px;
+        text-decoration: solid;
+        margin-top: 20px;
+        line-height: 20px;
+        
+    }
+
+    nav li a:hover {
+        background-color: #E5E3E4;
+    }
+
+main {
+    padding: 45px;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    background-color: #BF4417;
+    text-shadow: 3px 3px 3px #304351 ;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color:  #BF4417;
+    text-shadow: 3px 3px 3px #E5E3E4;
+}
+}
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+    #container {
+        width: 65%;
+        margin: 20px auto;
+        border: 4px #497089 ;
+        border-radius: 20px ;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav li a {
+        display: block;
+        height: 30px;
+        background-color: #497089 ;
+        font-size: 20px;
+        text-decoration: solid;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    hr {display: none;
+    }
+
+    #multi_col {
+    display: flex;
+    }
+
+    .col {
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid black;
+    }
+}
