@@ -6,19 +6,27 @@
     <title>Kill Team: Getting Started</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/ktsymbol.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300&display=swap');
+        </style>
 </head>
+
 <body>
+  
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="sidebar">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="started.html">Getting Started</a>
+        <a href="painting.html">Painted Example</a>
+        <a href="strategy.html">Strategy</a>
+        <a href="lore.html">Lore</a>
+    </div>
+
+    <button id="open-btn" class="open-btn">&#9776; Navigate</button>
+
     <div id="container">
     <header><img id="banner" src="images/KTlogo.jpg" alt="Kill Team Logo"></header>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="started.html">Getting Started</a></li>
-            <li><a href="painting.html">Painted Example</a></li>
-            <li><a href="strategy.html">Strategy</a></li>
-        </ul>
-    </nav>
     <hr>
     <main>
         <section id="multi_col">
@@ -34,11 +42,18 @@
         <p>After you've put your team together, and your opponent has done the same, you both need to agree on what sort of game you are playing, as well as where the skirmish will take place.
             To do this, you can purchase official Kill Zones from Games Workshop, or make your own out of whatever you find around the house, cereal boxes, cups, binders, or whatever else you may find to make the fight more interesting.
             if you do decide to pick up an official Kill Zone, you'll need to assemble and paint it as well, making the fight all the more personal, expanding the experience even further.</p>
+            <p>If you are looking to dive straight in, a short run-down of the rules was made by the games creators.</p>
+            <div class="video-wrapper">
+                <iframe class="video-container" src="https://www.youtube.com/embed/HA_461HmAuc?si=Dn_cvlKGFM1tRV8h"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            </div>
         </div>
         <hr>
         <div class="col">
             <h1>How to Achieve Victory</h1>
-            <h2> For Glory, Conquest, or just plain Fun </h2>
+            <h3> For Glory, Conquest, or just plain Fun </h3>
         <p>
             To win a game, players will be competing to score victory points from three different Operations, Joint Ops, Kill Ops and Crit Ops.</p>
          <ul>
@@ -49,7 +64,6 @@
         </ul>
             <hr>
         <h1>How to Play</h1>
-            <h3>There are No Games without Rules</h3>
         <p>
             Before playing, players will need to agree on a setting. Whether that is an official Kill Zone or whatever you find around the house, some specific rules need to be followed to make a game "official"
             Pictured below is the setting of Gallowdark, a combat zone on an immense spaceship, famous for its close quarters, and long hallways, which makes for a very engaging game that encourages players to get personal.</p>
@@ -58,17 +72,31 @@
             After this, players will use those abilites by spending points, or will save them for later.
             Players then take turns activating models to either fight the enemy or do an objective, depending on whats available, 
             At the end of the 4th round, players will count their points depending on the operation, and whoever has the highest score will have won!
-            A more in depth list of rules can be found <a href="https://wahapedia.ru/kill-team2/the-rules/core-rules/" target="_blank">here.</a> </p></div>
+            A more in depth list of rules can be found <a href="https://wahapedia.ru/kill-team2/the-rules/core-rules/" target="_blank">here.</a> </p>
         
+        </div>
         </section>
        <hr>
-    
+        
     </main>
     <footer>
         &copy; 2024 Kill Team project page </footer>
     </div>
 
+ <!-- JavaScript -->
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const openBtn = document.getElementById('open-btn');
+        const closeBtn = document.getElementById('close-btn');
 
+        openBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
     
 </body>
 

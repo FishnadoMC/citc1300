@@ -1,0 +1,320 @@
+/* Ctrl + Forward Slash to do notes */
+/* Global Styles */
+
+body {
+    background-color: #56594F;
+ 
+        font-family: "Geist Mono", serif;
+        font-weight: 300;
+        font-style: normal;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#container {
+    background-color: #E5E3E4;
+}
+
+.banner {
+    width: 50%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed; /* Ensures sidebar stays fixed while scrolling */
+    top: 0;
+    left: -250px;
+    background-color: #BF4417; /* Matches the theme */
+    color: white;
+    padding-top: 20px;
+    transition: 0.3s;
+    overflow-x: hidden;
+    z-index: 1000;
+}
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: #E5E3E4;
+    color: #54574E; /* Matches hover colors */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.open-btn {
+    font-size: 20px;
+    background-color: #304351; /* Complementary button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* Responsive Video */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: auto;
+}
+
+.video-wrapper iframe, 
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    background-color: #121212; /* Optional */
+}
+
+.video-container iframe, 
+.video-container video {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/*Changes links to be a different color and underlines when hovering over*/
+
+a {
+    color: #304351;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Styles: Helps with phones */
+@media (min-width: 320px) {
+    nav {
+        background-color: #BF4417;
+        padding: 5px;
+        margin-top: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    /* Keeps it vertical */
+    nav li {
+        display: block;
+    }
+
+    /* Takes links out of inline and allows us to style the nav li specifically */
+    nav li a {
+        display: block;
+        height: 30px;
+        background-color: #54574E;
+        font-size: 19px;
+        text-decoration: solid;
+        margin-top: 5px;
+    }
+
+    nav li a:hover {
+        background-color: #E5E3E4;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1,h2,h3 {
+        text-align: center;
+        background-color: #BF4417;
+        text-shadow: 1px 1px 1px #304351;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #BF4417;
+        text-shadow: 1px 1px 1px #E5E3E4;
+    }
+    .video-container {
+        height: auto;         /* Adjust height for smaller screens */
+        padding: 20px;        /* Add padding around the video */
+    }
+    .video-container iframe, 
+    .video-container video {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+
+
+/* Tablet */
+@media (min-width: 726px) {
+  
+
+    /* Takes links out of inline and allows us to style the nav li specifically */
+    nav li a {
+        display: block;
+        height: 30px;
+        background-color: #54574E;
+        font-size: 20px;
+        text-decoration: solid;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+
+    nav li a:hover {
+        background-color: #E5E3E4;
+    }
+
+    main {
+        padding: 45px;
+    }
+
+    h1,h2,h3 {
+        text-align: center;
+        background-color: #BF4417;
+        text-shadow: 3px 3px 3px #304351;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        background-color: #BF4417;
+        text-shadow: 3px 3px 3px #E5E3E4;
+    }
+    .video-container {
+        height: auto;         /* Adjust height for smaller screens */
+        padding: 20px;        /* Add padding around the video */
+    }
+    .video-container iframe, 
+    .video-container video {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    #container {
+        width: 65%;
+        margin: 20px auto;
+        border: 4px #497089;
+        border-radius: 20px;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav li a {
+        display: block;
+        height: 30px;
+        background-color: #497089;
+        font-size: 20px;
+        text-decoration: solid;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #multi_col {
+        display: flex;
+    }
+
+    .col {
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid black;
+    }
+}
+
+/* Strategy page section styling */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+    padding: 10px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    margin-top: 10px;
+}
+
+.caption h3, .caption p {
+    text-align: center;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text, .image {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .caption h3, .caption p {
+        text-align: center;
+    }
+}

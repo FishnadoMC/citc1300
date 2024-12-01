@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill Team: Lore</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your CSS file -->
+    <link rel="icon" href="images/ktsymbol.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300&display=swap');
+        </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="sidebar">
+        <!-- Button to close the sidebar -->
+        <button id="close-btn" class="close-btn">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="started.html">Getting Started</a>
+        <a href="painting.html">Painted Example</a>
+        <a href="strategy.html">Strategy</a>
+        <a href="lore.html">Lore</a>
+    </div>
+
+    <!-- Button to open the sidebar -->
+    <button id="open-btn" class="open-btn">&#9776; Menu</button>
+    
+    <div id="container">
+        <header><img id="banner" src="images/KTlogo.jpg" alt="Kill Team Logo"></header>
+        <hr>
+    <main>
+        <h1>Explore the Lore: The Universe of Kill Team</h1>
+        <h3>Uncover the stories behind your warriors and the factions that shape the Warhammer 40,000 universe.</h3>
+        <p>In the grim darkness of the far future, there is only war. The galaxy is a battleground of endless conflict, where every faction fights for survival, power, or divine purpose. Kill Team focuses on the elite squads sent to achieve critical objectives in this vast and dangerous universe.</p>
+        <p>What makes your individual games unique can vary from dice rolls and strategy, and with the regularly growing collection of recognized teams, there are hundreds of new stories you can create, by battling another player or fighting against pre-planned waves with a friend, there is a Kill Team for every player, and volumes of information about the world they represent.</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0kjrPm6T6Po?si=-37_byXa7-bm1Ck_" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <section id="multi_col">
+            <div class="col">
+                <h2>The Imperium of Man</h2>
+                <p>Humanity is divided into a multitude of factions, either working for or against the overall interests of Mankind in its attempts to retain control over the galaxy and survive unscathed in an incredibly hostile universe. However, the vast majority of Humans live under the authoritarian rule of the theocratic, interstellar empire known as the Imperium of Man.</p>
+                <p>With the widest variety of tactical assets a psychicly-enhanced and genetically modified superhuman may find themselves in possession of, the Human Kill Teams are the most numerous, doing anything to acheive victory at the cost of countless lives, as victory in death is victory, but failure is heresy unbecoming of your entire squadron.</p>
+                <img  src="images/Aquila.jpg" alt="Imerial Aquila">
+            </div>
+
+            <div class="col">
+                <h2>Forces of Chaos</h2>
+               <p>Chaos, also known to its servants as the Primordial Truth or the Primordial Annihilator, and to the Imperium of Man as the Archenemy, is a metaphysical, psychic force embodied by the malevolent entities comprised of emotional energy that exist in the psychic realm called the Immaterium.</p>
+               <p>Truly tied to their theme, Chaos Kill Teams host daemons, cultists, and even even the traitors of mankind. These teams use their dark gifts to spread disorder and ruin throughout the universe and the battlefield. </p>
+               <img  src="images/Star_of_Chaos.jpg" alt="Chaos Star">
+            </div>
+
+            <div class="col">
+                <h2>The Xeno Threat</h2>
+               <p>The main starfaring, intelligent xenos species in the Milky Way Galaxy are the Necrons, Orks, Tyranids, T'au, Craftworld Aeldari,and Drukhari, though there are countless other intelligent alien species, most of them hostile, that Mankind has encountered over the long millennia of its expansion across the stars.</p>
+               <p>Each of these races are represented by various Kill Teams, most of them having more than one. These Kill Teams boast models that would shock and the average passerby, and host stories that would do the same.</p>
+               <img src="images/Xenos.jpg" alt="Xenos">
+            </div>
+        </section>    
+    </main>
+    <hr>
+    <footer>
+        &copy; 2024 Kill Team project page
+    </footer>
+</div>
+
+
+
+
+
+
+
+<!-- JavaScript to control the sidebar -->
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const openBtn = document.getElementById('open-btn');
+        const closeBtn = document.getElementById('close-btn');
+
+        // Open the sidebar
+        openBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+        });
+
+        // Close the sidebar
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

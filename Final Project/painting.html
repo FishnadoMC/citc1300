@@ -6,20 +6,26 @@
     <title>Kill Team: Painting</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/ktsymbol.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300&display=swap');
+        </style>
 </head>
 
 <body>
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="sidebar">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="started.html">Getting Started</a>
+        <a href="painting.html">Painted Example</a>
+        <a href="strategy.html">Strategy</a>
+        <a href="lore.html">Lore</a>
+    </div>
+
+    <button id="open-btn" class="open-btn">&#9776; Navigate</button>
+
     <div id="container">
         <header><img id="banner" src="images/KTlogo.jpg" alt="Kill Team Logo"></header>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="started.html">Getting Started</a></li>
-                <li><a href="painting.html">Painted Example</a></li>
-                <li><a href="strategy.html">Strategy</a></li>
-            </ul>
-        </nav>
         <hr>
     <main>
             <h1> How to Paint Models</h1>
@@ -38,12 +44,15 @@
         <hr>
             <h1>
                 Accents</h1>
-            <h2>Making your Paints Pop.</h2>
+            <h2>Making your Paints Pop</h2>
                 <p>"I wanted to get a nice desaturated yellow calfskin leather for the gloves, boots, wraps, and pouches. The decision to paint them all in the same yellow ochre was definitely a decision borne of efficiency, 
                 but one that works for what is a horde infantry army. I basecoated the leather boots, wraps, straps, pouches, packs, and gloves with Vallejo Model Color Basic Flesh."</p>
                 <img style="width: 40%; float: left; margin: auto;" src="images/Wash.jpg " alt="Brown Wash">
                 <img style="width: 40%;" src="images/Highlights.jpg" alt="Yellow Accents">
+                
                 <p>Mr. Ward mixes colors to truly bring out and accent the different materials on the model, effectively showing the difference between the coat and the leater boots and gloves.</p>
+                <hr>
+            <h2>Using Specialty Paints</h2>
                 <p>Mr. Ward goes on to show us how to bring out the metallic objects on a model.</p>
                 <img style="width: 40%;" src="images/Steel.jpg" alt="Metal Accents">
                 <p>"The steel metallics were basecoated with Vallejo Metal Color Exhaust Manifold, washed with GW Nuln Oil,
@@ -51,13 +60,32 @@
                 <p>Mr. Ward finishes his Guardsmen by adding some finishing touches to the model, and later touches up each model in his group to make sure none of them look especially shiny or dull.</p>
                 <p>"Eye lenses and rifle lenses were basecoated with P3 Gnarls Green, washed with Vallejo Game Ink Black Green, highlighted with P3 wurm green and Vallejo Game Color Yellow Green. Final sun dot of white in the corner, like painting a gemstone.
                     The gas mask and bedroll were basecoated with P3 Hammerfall Khaki, washed with GW Agrax Earthshade, and highlighted with Vallejo Game Color Deck Tan."</p>
-                <img style="width: 60%;" src="images/Finalized.jpg" alt="Final Touches">
+
+                <hr>
+                    
+                    <h1>The Final Product</h1>
+                    <img style="width: 60%;" src="images/Finalized.jpg" alt="Final Touches">
+                    <p>A Krieg Veteran Guardsman Equipped with a Long-las sniper rifle, ready to take on the enemies of man. Thanks Colin!</p>
             </main>
         <hr>
         <footer> &copy; 2024 Kill Team project page </footer>
-    
 
     </div>
+
+      <!-- JavaScript -->
+      <script>
+        const sidebar = document.getElementById('sidebar');
+        const openBtn = document.getElementById('open-btn');
+        const closeBtn = document.getElementById('close-btn');
+
+        openBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
 
 </body>
 

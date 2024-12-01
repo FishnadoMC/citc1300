@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill Team: Strategy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/KTsymbol.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300&display=swap');
+       </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="sidebar">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="started.html">Getting Started</a>
+        <a href="painting.html">Painted Example</a>
+        <a href="strategy.html">Strategy</a>
+        <a href="lore.html">Lore</a>
+    </div>
+
+    <button id="open-btn" class="open-btn">&#9776; Navigate</button>
+
+    <div id="container">
+        <header>
+            <img id="banner" src="images/KTlogo.jpg" alt="Kill Team Logo">
+        </header>
+
+        <hr>
+
+        <main>
+            <h1>Master The Battlefield</h1>
+            <section class="section">
+                <div class="text">
+                    <h2>Sharpen your skills with expert tips and strategies for every squad type and play style.</h2>
+                    <p>The best players always scope out the playing area beforehand, and try to familiarize themselves with the rules of engaging, shooting, and cover that they might use while in various positions on the battlefield.</p>
+                    <p>An exceptional player will familiarize themself not just with their own Kill Team, but their enemy as well.</p>
+                </div>
+                <div class="image">
+                    <img src="images/KTbattlefield.jpg" alt="Battlefield Out of the Box">
+                    <div class="caption">
+                        <h3>Official Killzone: Octarius</h3>
+                        <p>You may try to hold an objective out in the open, getting more points and putting your team at risk, or you can try to move to strike for the most damage.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <h1>Advanced Strategies</h1>
+            <section class="section">
+                <div class="text">
+                    <h2>Advanced Tactics and Competetive Gameplay</h2>
+                    <p>A great player knows that his enemy wants to wipe him out in the most efficient way possible, a better player forces the other to get into positions that put them at a disadvantage, by ambush or line of sight.</p>
+                    <p>To be the good at Kill Team, you have to roll dice well, but to be the best, you need to know when best to roll them. Spreading enemies out often makes for easier targets, but heftier foes can tank damage, so confusing or disorienting the enemy may be a better approach.</p>
+                </div>
+                <div class="image">
+                    <img src="images/KnowThineEnemy.jpg" alt="Kommandos Vs. Krieg">
+                    <div class="caption">
+                        <h3>Krieg Guardsmen and Ork Kommandos duke it out</h3>
+                        <p>Tons of resources are available for <a href="https://www.warhammer-community.com/en-gb/articles/xfV8vUOg/download-the-kill-team-app-and-faction-rules-today/" target="_blank">free online</a>, from <a href="https://youtu.be/Ju5D5VvyCP4?si=4b9NEHWyp_-Ypdq-" target="_blank">videos</a> on how to play your Kill Team, or how to beat somebody else's!</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <h1>"Classified" Info</h1>
+            <section class="section">
+                <div class="text">
+                    <h2>The Key to Victory is Information</h2>
+                    <p>While some information is kept secret from you, like faction-specific chosen abilities, other info isn't! Use the data cards and info online to recognize and differentiate the strength of an enemy with a flamethrower vs. the range of an ally with a lasrifle, or if possible, the size of detonation of either side's bomb.</p>
+                    <p>With over 30 and counting Official Kill Teams, theres alot to learn, but that just means more fun to be had!</p>
+                </div>
+                <div class="image">
+                    <img src="images/KTdatacards.jpg" alt="Enemy Information">
+                    <div class="caption">
+                        <h3>Know Thine Enemy</h3>
+                        <p>The Ork Kommandos are known for their reliability in most situations, ready for any type of fight and able to last with more health than most models, while Krieg Guardsmen outnumber and outmaneuver their opponent to overwhelm them.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+            <hr>
+
+        <footer>
+            &copy; 2024 Kill Team project page
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const openBtn = document.getElementById('open-btn');
+        const closeBtn = document.getElementById('close-btn');
+
+        openBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

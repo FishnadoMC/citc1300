@@ -17,6 +17,7 @@ img {
 .banner {
     width: 50%;
 }
+
 /* Mobile Styles: Helps with phones */
 
 @media (min-width: 320px) {
